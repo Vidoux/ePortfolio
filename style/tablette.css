@@ -1,0 +1,18 @@
+@media screen and (max-width:728px) {
+    footer {
+        font: bold 14px sans-serif;
+    }
+
+    footer .footer-gauche,
+    footer .footer-centre,
+    footer .footer-droite {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    footer .footer-centre i {
+        margin-left: 0;
+    }
+}

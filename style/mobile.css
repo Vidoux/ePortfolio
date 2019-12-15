@@ -1,0 +1,35 @@
+@media screen and (max-width:500px) {
+    svg {
+        display: none;/*Faire disparaitre l'icone */
+    }
+
+    .titre_page {
+        width: 70%;
+        margin-left: 60px;
+    }
+
+    .titre_page h1,
+    h2 {
+        font-size: 0.9em;
+    }
+
+    .titre_page h1 {
+        margin-left: 7%;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        top: 0;
+        margin: 10px;
+    }
+
+    .boite2 {
+        display: block;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    p{
+        text-align: left;
+    }
+}
