@@ -13,18 +13,21 @@
 		<link rel="stylesheet" href="../bt/css/bootstrap.min.css"><!-- bootstrap feuille de style -->
 		<link rel="stylesheet" media="screen" type="text/css" href="../style/desktop.css"/> 
 		<link rel="stylesheet" media="screen and (max-width: 1200px)" type="text/css" href="../style/tablette.css"/> 
-		<link rel="stylesheet" media="screen and (max-width: 500px)" type="text/css" href="../style/mobile.css" />  
+		<link rel="stylesheet" media="screen and (max-width: 500px)" type="text/css" href="../style/mobile.css" /> 
 		<link href="https://fonts.googleapis.com/css?family=Merienda&display=swap" rel="stylesheet"> <!-- insertion d'une police google -->
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 		<!--lien vers une bank=que d'icones-->	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
 	</head>
-
-	<body class="body_contact paralax">
+	
+	<body>
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-		
+
+		<div class="bloc_haut paralax" style="background-image: url('../image/matrice.png'); height: 400px;">
+			<h1>Parcourez mes dernières réalisations</h1>
+		</div>
 		<header>
 		<nav class="navbar sticky-top navbar-dark bg-dark">
 				<a class="navbar-brand" href="../index.html">
@@ -76,7 +79,7 @@
 						Tanguy Vidal
 						<i class="fa fa-code" aria-hidden="true" style="display: inline"></i>
 					</h1>
-					<h2>Me Contacter</h2>
+					<h2>Projets et Réalisations</h2>
 				</div>
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -98,11 +101,11 @@
         				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 				         	<a class="dropdown-item" href="competences.html">Compétences</a>
 				         	<div class="dropdown-divider"></div>
-				         	<a class="dropdown-item" href="projet.html">Réalisations et projets</a>
+				         	<a class="dropdown-item  active" href="#">Réalisations et projets</a>
        					</div>
       				</li>
-      				<li class="nav-item  active">
-        				<a class="nav-link" href="#">Contactez moi</a>
+      				<li class="nav-item">
+        				<a class="nav-link" href="contact.html">Contactez moi</a>
       				</li>
     			</ul>
 				</div>
@@ -112,35 +115,46 @@
 			
 			
 		</header>
-		<div class="corps" style="margin-top: 150px;">
-
-			<div class="contact">
-				<h1>Formulaire de Contact</h1>
-		        <form action="mailto:tanguy.vidal@etu.parisdescartes.fr" method="post" enctype="text/plain" accept-charset="utf-8">
-		        	<label for="pseudo">Nom : </label>
-					<input type="text" placeholder="Dupont"  name="pseudo" id="pseudo" class="input nom" />
-					<br /><br />
-
-					<label for="Prenom">Prénom : </label>
-					<input type="text" placeholder="Gérard"  name="Prenom" id="Prenom" class="input nom" />
-					<br />
-					<br />
-
-					<label for="e-mail">E-mail : </label>
-					<input type="email" placeholder="gerard.dupont@gmail.com" size="50" class="input email" id="e-mail"/>
-					<br /> 
-					<br />
-
-					<br>
-					<textarea cols="60" rows="10" class="input message">	Votre Message
-					</textarea>
-						
-					<br /><br />
-					<input type="submit" value="confirmer" class="submit"/>
-
-
-		        </form>
-        	</div>
+		<div class="corps geo paralax" style="margin-top: 300px;">
+			<article>
+				<h3>Mes derniers projets et réalisations</h3>
+				<p>
+					Découvrez à travers mes différnets travaux les compétences que j'ai pût développer et ce dont je suis capable. Ces travaux ne montrent pas toutes mes capacité et peuvent être plus où moins récents.<br/>
+					N'hésitez pas à me <a href="contact.html">contacter</a> pour toute question. Le travail présenté ci dessous n'est pas représentatif de outes mes <a href="competences.html">compétences.</a>
+				</p>
+				<hr/>
+			</article>
+			<article>
+				<h3>Projets : </h3>
+				<div class="boite">
+					<a href="projets/mm01.html">
+						<div class="filtre" id="f1">
+							<div class="texte">réalisation d'un<br />site vitrine</div>
+						</div>
+					</a>
+					<h4>2019</h4>
+					<p>Réalisation d'un site vitrine en <b>HTML5 CSS3</b> et javascript</p>
+				</div>
+				<div class="boite">
+					<a href="projets/iap.html">
+						<div class="filtre" id="f2">
+							<div class="texte">Projet en C++</div>
+						</div>
+					</a>
+					<h4>2019</h4>
+					<p>Réalisation d'une application en <b>langage C</b> avec Visual studio</p>
+				</div>
+				<div class="boite">
+					<a href="projets/isn.html">
+						<div class="filtre" id="f3">
+							<div class="texte">Pragrammation <br>Arduino</div>
+						</div>
+					</a>
+					<h4>2017-2018</h4>
+					<p>Réalisation d'une station météo en réseau avec <b>arduino</b></p>
+				</div>
+				
+			</article>
 		</div>
 
 		<footer ><!--Pied de Page-->
@@ -151,7 +165,7 @@
 
 				<p class="footer-lien">
 					<a href="../index.html">Accueil</a>						
-					<a href="#">Contact</a>
+					<a href="contact.html">Contact</a>
 				</p>
 				<address><!-- balise pour indiquer le prproétaire du site -->
 					<p class="footer-copyright">&copy; Tanguy Vidal - 2019</p>

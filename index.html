@@ -4,19 +4,34 @@
 <html lang="fr">
 	<head>
 		<title> ePortfolio-accueil</title>
+		<link rel="shortcut icon" type="image/x-icon" href="image/icone.png" />
+
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        
         <meta name="HandheldFriendly" content="true" />
         <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no" />
-        <!-- end mobile specific info -->
-        <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"> <!--  importe une police d'écriture google -->
-		<link rel="stylesheet" href="bt/css/bootstrap.min.css"><!-- bootstrap feuille de style -->
-		<link rel="stylesheet" type="text/css" href="style/desktop.css"/> 
-		<link rel="stylesheet" type="text/css" href="style/tablette.css"/> 
-		<link rel="stylesheet" type="text/css" href="style/mobile.css" /> 
-		<link href="https://fonts.googleapis.com/css?family=Merienda&display=swap" rel="stylesheet"> <!-- insertion d'une police google -->
+
+        <!--  importe une police d'écriture google -->
+        <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"> 
+		<meta name="description" content="Harry Potter à l'école des sorciers">
+	    <meta name="author" lang="fr" content="Tanguy Vidal">
+	    <meta name="keywords" content="harry potter sorcier sorciers magie rowling jk">
+
+		<!-- Insertion des Feuilles de style -->
+			<!-- bootstrap feuille de style -->
+		<link rel="stylesheet" href="bt/css/bootstrap.min.css">
+			<!-- css commun -->
+		<link rel="stylesheet" media="screen" type="text/css" href="style/desktop.css"/> 
+			<!-- tablettes -->
+		<link rel="stylesheet" media="screen and (max-width: 1200px)" type="text/css" href="style/tablette.css"/> 
+			<!-- smartphones -->
+		<link rel="stylesheet" media="screen and (max-width: 500px)" type="text/css" href="style/mobile.css" /> 
+
+		<!-- insertion de polices google(googlefont) -->
+		<link href="https://fonts.googleapis.com/css?family=Merienda&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-		<!--lien vers une bank=que d'icones-->	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+		<!-- lien vers une banque d'icones (fontawesome) -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	</head>
 
 	<body>
@@ -24,16 +39,16 @@
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-		<!-- ------------------------------------------- -->
+
 		<!-- Bannière avec l'image en haut de la page -->
-		<div class="bloc_haut" style="background-image: url('image/fond.jpg');">
+		<div class="bloc_haut paralax" style="background-image: url('image/fond.jpg');">
 			<div id="d1"><div class="aphaut"><p>Etudiant</p></div><div class="apbas"><p>Informatique</p></div></div>
 			<h2 class="apbas">IUT Paris Descartes</h2>
 		</div>
-		<!-- ------------------------------------------- -->
+
 		<!-- En tête de la page (Navigation) -->
 		<header>
-		<nav class="navbar sticky-top navbar-dark bg-dark"><!-- Navigation de la page (en bootstrap) -->
+		<nav class="navbar navbar-dark bg-dark">
 				<a class="navbar-brand" href="#">
 					<!-- Logo de la page -->
 					<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="967.663px" height="967.663px" viewBox="0 0 967.663 967.663" style="enable-background:new 0 0 967.663 967.663;" xml:space="preserve">
@@ -93,7 +108,7 @@
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<!-- ------------------------------------------- -->
+				
 				<!-- Liens de navigation du menu déroulant -->
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 	    			<ul class="navbar-nav mr-auto">
@@ -110,7 +125,7 @@
 	        				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 					         	<a class="dropdown-item" href="page/competences.html">Compétences</a>
 					         	<div class="dropdown-divider"></div>
-					         	<a class="dropdown-item" href="#">Réalisations et projets</a>
+					         	<a class="dropdown-item" href="page/projet.html">Réalisations et projets</a>
 	       					</div>
 	      				</li>
 	      				<li class="nav-item">
@@ -120,7 +135,7 @@
 				</div>
 		</nav>	
 		</header>
-		<!-- ------------------------------------------- -->
+		
 		<!-- Corps principal de la page -->
 		<div class="corps">
 			<article>
@@ -131,18 +146,20 @@
 			</article>
 
 			<article class="couleur">
-				<h3>Mes derniers projets et réalisations</h3>
+				<a href="page/projet.html">
+					<h3>Mes derniers projets et réalisations</h3>
+				</a>
 				<div class="boite">
-					<a href="http://mm01.thorelnicolas.fr/p19/vidaltan/projet" target="blank_">
+					<a href="page/projets/mm01.html">
 						<div class="filtre" id="f1">
 							<div class="texte">réalisation d'un<br />site vitrine</div>
 						</div>
 					</a>
-					<h4>2018</h4>
+					<h4>2019</h4>
 					<p>Réalisation d'un site vitrine en <b>HTML5 CSS3</b> et javascript</p>
 				</div>
 				<div class="boite">
-					<a href="http://mm01.thorelnicolas.fr/p19/vidaltan/projet" target="blank_">
+					<a href="page/projets/iap.html">
 						<div class="filtre" id="f2">
 							<div class="texte">Projet en C++</div>
 						</div>
@@ -151,7 +168,7 @@
 					<p>Réalisation d'une application en <b>langage C</b> avec Visual studio</p>
 				</div>
 				<div class="boite">
-					<a href="http://mm01.thorelnicolas.fr/p19/vidaltan/projet" target="blank_">
+					<a href="page/projets/isn.html">
 						<div class="filtre" id="f3">
 							<div class="texte">Pragrammation <br>Arduino</div>
 						</div>
@@ -198,12 +215,9 @@
 				</div>
 			</article>
 		</div>
-		<!-- ------------------------------------------- -->		
 
-	
-
-
-		<footer ><!-- Pied de Page (divisé en trois colonnes) -->
+		<!-- Pied de Page (divisé en trois colonnes) -->
+		<footer >
 
 			<div class="footer-gauche">
 
@@ -218,6 +232,8 @@
 				<address><!-- balise pour indiquer le prproétaire du site -->
 					<p class="footer-copyright">&copy; Tanguy Vidal - 2019</p>
 				</address>
+				<img src="image/html5.png" alt="w3cvalidator">
+				<img src="image/vcss.png" alt="w3cvalidator">
 				
 			</div>
 

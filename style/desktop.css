@@ -1,3 +1,9 @@
+/*
+    Formaté : 2019-12-15 16:49 (1576428557)
+    avec CSSLisible - http://github.com/Darklg/CSSLisible
+*/
+
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -5,11 +11,14 @@
     margin: 0;
     padding: 0;
 }
+html{
+    height: 100%;
+}
+
 
 /*----------------------NAVIGATION----------------------*/
 
 .navbar {
-    position: fixed;
     width: 100%;
     padding: 0;
     font-family: 'Merienda',cursive;
@@ -63,8 +72,14 @@ svg { /*Taille de l'icone dans la nac=vigation*/
     top: 0;
     width: 100%;
     height: 600px;
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.paralax{
+    background-attachment: fixed;
+    background-position: center;
     background-size: cover;
 }
 
@@ -74,6 +89,14 @@ svg { /*Taille de l'icone dans la nac=vigation*/
     margin-left: auto;
     padding-top: 300px;
     font-family: 'Merienda',cursive;
+}
+
+.bloc_haut h1{
+    width: 100%;
+    text-align: center;
+    margin-top: 200px;
+    color: #FFF;
+    text-shadow: 3px 2px rgb(4,77,140);
 }
 
 /*--------------------------------------------*/
@@ -194,7 +217,7 @@ h1 {
 h3 {
     width: 100%;
     text-align: center;
-    color: #B4D587;
+    color: #044D8C;
 }
 
 h4 {
@@ -204,17 +227,22 @@ h4 {
 
 h6 {
     text-align: left;
-    font-style: bold;
+    font-weight: bold;
     color: white;
 }
 
 .corps {
     width: 100%;
-    margin-top: 600px;
+    margin-top: 480px;
+}
+
+.geo{
+    background-image: url("../image/projets/fond2.jpg");
+    height: 100%; 
 }
 
 .corps div {
-    animation: arrive 4s;
+    animation: arrive 3s;
 }
 
 .corps article {
@@ -275,13 +303,15 @@ article {
     margin: 4%;
     padding-top: 40px;
     max-width: 270px;
-    min-width: 160px;
+    min-width: 200px;
     background-color: #FFF;
+    border: 5px solid #044D8C;
 }
 
 .boite2 {
     display: inline-block;
     width: 40%;
+    min-width: 300px;
     height: 90%;
     margin: 2%;
     padding: 1%;
@@ -326,12 +356,21 @@ article {
     color: #999;
 }
 
+.boite_texte{
+    max-height: 200px;
+    overflow: auto;
+}
+
 .couleur img {
     transition: 2s;
 }
 
 .couleur img:hover {
     transform: scale(1.1);
+} 
+
+.couleur h3{
+    color: #B4D587;
 }
 
 .filtre {
@@ -372,7 +411,7 @@ article {
 
 .boite:hover .filtre {
     bottom: 0;
-    height: 200px;
+    height: 190px;
 }
 
 .texte {
@@ -394,6 +433,7 @@ article i {
     font-size: 40px;
     color: #044D8C;
 }
+
 
 .progress {
     margin: 20px;
@@ -419,101 +459,115 @@ article i {
     width: 85%;
     margin-bottom: 20px;
 }
+
 /**------------------Contact-------------------------**/
 
-.contact{
-    margin-top: 200px;
+.contact {
     display: block;
-    margin-left:auto;
-    margin-right: auto;
     width: 80%;
+    margin-top: 200px;
+    margin-right: auto;
     margin-bottom: 70px;
-    background-color: rgba(10,77,140,0.9);
+    margin-left: auto;
+    padding: 10px;
     border-radius: 50px;
-    padding:10px;
+    background-color: rgba(10,77,140,0.9);
 }
 
-.contact h1{
+.contact h1 {
     width: 100%;
     text-align: center;
 }
 
-.input{
-border : 3px solid Darkgrey;
-border-radius : 5px;
-padding : 3px;
-transition : all 0.2s ease;
-width: 45%;
-display: block;
-margin-left: auto;
-margin-right: auto;
-
-}
-
-
-
-label{
+.input {
     display: block;
-    margin-left: auto;
+    width: 45%;
     margin-right: auto;
-    color: white;
+    margin-left: auto;
+    padding: 3px;
+    border: 3px solid Darkgrey;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+
+label {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
     text-indent: 3em;
+    color: white;
 }
 
-.nom{
-background-image : url("../image/formulaire/nom2.png");
-background-repeat : no-repeat;
-background-position : 0px 4px;
-background-size : 30px;
-padding-left : 27px;
+.nom {
+    padding-left: 27px;
+    background-image: url("../image/formulaire/nom2.png");
+    background-position: 0 4px;
+    background-repeat: no-repeat;
+    background-size: 30px;
 }
 
-.email{
-background-image : url("../image/formulaire/email.png");
-background-repeat : no-repeat;
-background-position : 5px 4px;
-background-size : 17px;
-padding-left : 27px;
+.email {
+    padding-left: 27px;
+    background-image: url("../image/formulaire/email.png");
+    background-position: 5px 4px;
+    background-repeat: no-repeat;
+    background-size: 17px;
 }
 
-.message{
-background-image : url("../image/formulaire/message.png");
-background-repeat : no-repeat;
-background-position : 5px 4px;
-background-size : 17px;
-padding-left : 27px;
-width: 70%;
+.message {
+    width: 70%;
+    padding-left: 27px;
+    background-image: url("../image/formulaire/message.png");
+    background-position: 5px 4px;
+    background-repeat: no-repeat;
+    background-size: 17px;
 }
 
-
-
-.input:hover{
-color : Grey;
-border : 4px solid Red;
+.input:hover {
+    border: 4px solid Red;
+    color: Grey;
 }
 
-.submit{
-padding : 10px;
-transition : all 0.4s ease;
-display: block;
-margin-left: auto;
-margin-right: auto;
-width:100px;
-
+.submit {
+    display: block;
+    width: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    transition: all 0.4s ease;
 }
 
-.submit:hover{
-background-color : Gainsboro;
+.submit:hover {
+    background-color: Gainsboro;
 }
 
-.body_contact{
+.body_contact {
     background-image: url("../image/contact.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-/*--------------------------------------------*/
 
+}
+
+/*--------------------------------------------*/
+dt i {
+    margin: 10px;
+    font-size: 3em;
+    display: inline-block;
+    color: rgba(4,77,140,0.9);
+    
+}
+dt h6{
+    color: rgba(4,77,140,0.9);
+    display: inline-block;
+}
+
+.mx-5 h1{
+    color: rgba(4,55,140,1);
+}
+.mx-5 h3{
+    color: #668044;
+}
 /**------------------Pied de Page-------------------**/
 
 footer {

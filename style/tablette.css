@@ -1,4 +1,4 @@
-@media screen and (max-width:728px) {
+@media screen and (max-width:1200px) {
     footer {
         font: bold 14px sans-serif;
     }
@@ -14,5 +14,8 @@
 
     footer .footer-centre i {
         margin-left: 0;
+    }
+    .boite_texte{
+        text-align: left;
     }
 }

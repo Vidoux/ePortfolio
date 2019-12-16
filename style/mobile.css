@@ -22,12 +22,19 @@
         top: 0;
         margin: 10px;
     }
+    .paralax{
+        background-attachment: scroll;
+    }
 
-    .boite2 {
+    .boite2,.boite {
         display: block;
         width: 80%;
         margin-right: auto;
         margin-left: auto;
+    }
+    .boite_texte{
+        max-height: none;
+        overflow: hidden;
     }
     p{
         text-align: left;
