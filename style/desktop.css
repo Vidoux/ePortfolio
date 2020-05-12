@@ -14,11 +14,18 @@
 html{
     height: 100%;
 }
+/*----------------------Annulation bootstrap----------------------*/
+article p{
+    margin-bottom: 0 !important;
+}
 
+/*----------------------------------------------------------------*/
 
 /*----------------------NAVIGATION----------------------*/
 
 .navbar {
+    position: absolute;
+    top: 0;
     width: 100%;
     padding: 0;
     font-family: 'Merienda',cursive;
@@ -29,6 +36,8 @@ html{
     padding-left: 40px;
     background: rgba(26,26,26,0.7);
 }
+
+
 
 .navbar-toggler {
     margin: 10px 3.4%;
@@ -44,8 +53,9 @@ svg { /*Taille de l'icone dans la nac=vigation*/
 
 .titre_page {
     display: block;
-    width: 100%;
-    margin-left: 25%;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px;
     color: white;
 }
@@ -68,13 +78,12 @@ svg { /*Taille de l'icone dans la nac=vigation*/
 /*----------------------Image d'en-tête----------------------*/
 
 .bloc_haut {
-    position: absolute;
-    top: 0;
     width: 100%;
-    height: 600px;
+    height: 540px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-image: url(../image/fond.jpg);
 }
 
 .paralax{
@@ -106,7 +115,7 @@ svg { /*Taille de l'icone dans la nac=vigation*/
 .aphaut {/*Apprarition par le haut*/
     display: inline-block;
     width: 43%;
-    color: #D9D6D4;
+    color: #fff;
     animation-name: aphaut;
     animation-duration: 1s;
     transition: all 0.7s ease-out;
@@ -166,7 +175,7 @@ svg { /*Taille de l'icone dans la nac=vigation*/
     display: inline-block;
     width: 52%;
     margin-left: 10px;
-    color: #D9D6D4;
+    color: #FFFFFF;
     animation-name: apbas;
     animation-duration: 2s;
     transition: all 2s ease-out;
@@ -211,7 +220,11 @@ svg { /*Taille de l'icone dans la nac=vigation*/
 
 h1 {
     padding: 10px;
-    color: #B9B9B9;
+    color: rgba(255,255,255,0.95);
+}
+
+h2{
+    color: white;
 }
 
 h3 {
@@ -233,7 +246,6 @@ h6 {
 
 .corps {
     width: 100%;
-    margin-top: 480px;
 }
 
 .geo{
@@ -247,6 +259,13 @@ h6 {
 
 .corps article {
     animation: apparaitre 2s;
+    padding: 10px;
+}
+
+.content{
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
 }
 
 b {
@@ -281,6 +300,18 @@ article {
     margin-left: auto;
     text-align: center;
 }
+
+.fleche_plus{
+    font-size: 17px;
+    margin: 0;
+    margin-right: 4px;
+}
+
+.fleche_plus:hover{
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
 
 .couleur {
     width: 100%;
@@ -403,7 +434,7 @@ article {
 }
 
 #f3 {
-    background-image: url("../image/arduino.jpg");
+    background-image: url("../image/tiler-team.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -429,9 +460,14 @@ article {
 }
 
 article i {
-    margin: 5%;
+    margin: 10px;
     font-size: 40px;
     color: #044D8C;
+}
+
+article img{
+    max-width: 70%;
+    max-height: 200px;
 }
 
 
@@ -568,6 +604,169 @@ dt h6{
 .mx-5 h3{
     color: #668044;
 }
+/**------------------TIMELINE-----------------------**/
+/*source: https://bootsnipp.com/snippets/OzQj */
+.timeline {
+    list-style: none;
+    padding: 20px 0 20px;
+    position: relative;
+}
+
+.timeline:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 3px;
+    background-color: #eeeeee;
+    left: 50%;
+    margin-left: -1.5px;
+}
+
+.timeline > li {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+    content: " ";
+    display: table;
+}
+
+.timeline > li:after {
+    clear: both;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+    content: " ";
+    display: table;
+}
+
+.timeline > li:after {
+    clear: both;
+}
+
+.timeline > li > .timeline-panel {
+    width: 46%;
+    float: left;
+    border: 1px solid #d4d4d4;
+    border-radius: 2px;
+    padding: 20px;
+    position: relative;
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+
+.timeline > li > .timeline-panel:before {
+    position: absolute;
+    top: 26px;
+    right: -15px;
+    display: inline-block;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #ccc;
+    border-right: 0 solid #ccc;
+    border-bottom: 15px solid transparent;
+    content: " ";
+}
+
+.timeline > li > .timeline-panel:after {
+    position: absolute;
+    top: 27px;
+    right: -14px;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #FFFFFF;
+    border-right: 0 solid #FFFFFF;
+    border-bottom: 14px solid transparent;
+    content: " ";
+}
+
+.timeline > li > .timeline-badge {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    margin-left: -25px;
+    background-color: #999999;
+    z-index: 100;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel {
+    float: right;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+}
+
+.timeline-badge.primary {
+    background-color: #2e6da4 !important;
+}
+
+.timeline-badge.success {
+    background-color: #3f903f !important;
+}
+
+.timeline-badge.warning {
+    background-color: #f0ad4e !important;
+}
+
+.timeline-badge.danger {
+    background-color: #d9534f !important;
+}
+
+.timeline-badge.info {
+    background-color: #5bc0de !important;
+}
+
+.timeline-title {
+    margin-top: 0;
+    color: inherit;
+}
+
+.timeline-body > p,
+.timeline-body > ul {
+    margin-bottom: 0;
+}
+
+.timeline-body > p + p {
+    margin-top: 5px;
+}
+
+.timeline h4{
+    margin: 0;
+    padding: 0;
+}
+.timeline h5{
+    margin: 0;
+    padding: 0;
+    color: #0c5460;
+}
+
+/**-------------------------------------------------**/
+
 /**------------------Pied de Page-------------------**/
 
 footer {

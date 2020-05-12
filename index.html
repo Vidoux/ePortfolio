@@ -39,7 +39,7 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 		<!-- Bannière avec l'image en haut de la page -->
-		<div class="bloc_haut paralax" style="background-image: url('image/fond.jpg');">
+		<div class="bloc_haut paralax" >
 			<div id="d1"><div class="aphaut"><p>Etudiant</p></div><div class="apbas"><p>Informatique</p></div></div>
 			<h2 class="apbas">IUT Paris Descartes</h2>
 		</div>
@@ -49,7 +49,9 @@
 		<nav class="navbar navbar-dark bg-dark">
 				<a class="navbar-brand" href="#">
 					<!-- Logo de la page -->
-					<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="967.663px" height="967.663px" viewBox="0 0 967.663 967.663" style="enable-background:new 0 0 967.663 967.663;" xml:space="preserve">
+					<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="967.663px"
+						 height="967.663px" viewBox="0 0 967.663 967.663"
+						 style="enable-background:new 0 0 967.663 967.663;" xml:space="preserve">
 						<g>
 							<path fill="#B4D587" d="M163.807,872.604l106.154,26.773c1.463,0.369,2.959,0.557,4.446,0.557c7.972,0,14.917-5.125,17.285-12.752l61.703-198.766
 							l30.76-220.104l0.178-0.701c4.174-16.548-5.895-33.405-22.442-37.58c-6.621-1.67-13.29-1.055-19.178,1.339
@@ -93,9 +95,9 @@
 					<!-- ------------------------------------------- -->
 					<div class="titre_page"	>
 						<h1 >
-							<i class="fa fa-code" aria-hidden="true" style="display: inline"></i>
+							<i class="fa fa-code" aria-hidden="true" style="color : rgba(255,255,255,0.95)"></i>
 							Tanguy Vidal
-							<i class="fa fa-code" aria-hidden="true" style="display: inline"></i>
+							<i class="fa fa-code" aria-hidden="true" style="color: rgba(255,255,255,0.95)"></i>
 						</h1>
 						<h2>Mon ePortfolio</h2>
 					</div>
@@ -114,17 +116,10 @@
 	        				<a class="nav-link" href="#">Accueil<span class="sr-only">(current)</span></a>
 	      				</li>
 	      				<li class="nav-item">
-	        				<a class="nav-link" href="page/mes_loisirs.html">A propos de moi</a>
+	        				<a class="nav-link" href="page/competences.html">Compétences</a>
 	      				</li>
-	      				<li class="nav-item dropdown">
-	        				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	          					Mes études
-	       					 </a>
-	        				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					         	<a class="dropdown-item" href="page/competences.html">Compétences</a>
-					         	<div class="dropdown-divider"></div>
-					         	<a class="dropdown-item" href="page/projet.html">Réalisations et projets</a>
-	       					</div>
+	      				<li class="nav-item">
+	        				<a class="nav-link" href="page/projet.html">Réalisations et projets</a>
 	      				</li>
 	      				<li class="nav-item">
 	        				<a class="nav-link" href="page/contact.html">Contactez moi</a>
@@ -136,17 +131,34 @@
 		
 		<!-- Corps principal de la page -->
 		<div class="corps">
-			<article>
-				<p>
-					Bienvenue dans mon ePortfolio, découvrez mon expérience professionnelle.<br />
-					Vous trouverez ici toutes les informations sur ma formation et mes compétences
-				</p>
+			<article class="couleur" style="background-color: #39BBD2">
+				<h2>Qui suis-je?</h2>
+				<div class="boite2" style="padding: 10px;">
+					<p style="font-size: 20px; text-align: left;">
+						Bienvenu sur mon e-Portfolio, je suis étudiant en DUT Informatique à l'institut universitaire de Paris Descartes.
+						Passionné par le monde de l'informatique te des nouvelles technologie, je vous invite à en découvrir un peu plus sur
+						moi et mon parcours à travers ce eportfolio.<br />
+					</p>
+				</div>
+				<div class="boite2" style="width: auto; border-radius: 200px; ">
+					<img src="image/photo_indentité_VIDAL_Tanguy.png" alt="photo profil" style="border-radius: 200px"/>
+				</div>
+
 			</article>
 
 			<article class="couleur">
 				<a href="page/projet.html">
 					<h3>Mes derniers projets et réalisations</h3>
 				</a>
+				<div class="boite">
+					<a href="page/projets/isn.html">
+						<div class="filtre" id="f3">
+							<div class="texte">Programmation<br> Java</div>
+						</div>
+					</a>
+					<h4>2020</h4>
+					<p>Programmation du jeu The Tiler Team en <b>Java</b> orienté objet</p>
+				</div>
 				<div class="boite">
 					<a href="page/projets/mm01.html">
 						<div class="filtre" id="f1">
@@ -165,51 +177,88 @@
 					<h4>2019</h4>
 					<p>Réalisation d'une application en <b>langage C</b> avec Visual studio</p>
 				</div>
-				<div class="boite">
-					<a href="page/projets/isn.html">
-						<div class="filtre" id="f3">
-							<div class="texte">Pragrammation <br>Arduino</div>
+			</article>
+
+
+			<article class="couleur" style="background-color: #39BBD2">
+				<i class="fas fa-laptop-code" style="color: white;"></i>
+				<h2>Plus d'informations sur mon cursus</h2>
+				<ul class="timeline content">
+					<li>
+						<div class="timeline-badge"></div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4 class="timeline-title">DUT Informatique, 1ère année</h4>
+								<h4><i class="far fa-clock" style="font-size: 20px; color: #B4D587;"></i>2019-2020</h4>
+								<h5><i class="fas fa-map-marked-alt" style="font-size: 20px; color: #B4D587;"></i>IUT Paris Descartes (Paris V)</h5>
+							</div>
 						</div>
-					</a>
-					<h4>2017-2018</h4>
-					<p>Réalisation d'une station météo en réseau avec <b>arduino</b></p>
-				</div>
-			</article>
-		
-
-			<article>
-				<i class="fas fa-laptop-code"></i><h3>Plus d'informations sur mon cursus</h3><i class="fas fa-laptop-code"></i>
-			</article>
-
-			<article class="couleur">
-				<div class="boite2">
-					<a href="https://www.utt.fr/" target="blank_">
-						<img src="image/utt.png" alt="Logo de l'UTT">
-					</a>
-				</div>
-				<div class="boite2">
-					<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwjyztX00q3mAhVOyhoKHY4oBUIQFjAAegQIFRAD&url=https%3A%2F%2Fwww.iut.parisdescartes.fr%2F&usg=AOvVaw2u4K73KmG-VRX8EQGCqWnE" target="blank_">
-						<img src="image/Logo_Paris_Descartes.png" alt="Logo de l'iut Paris descartes">
-					</a>
-				</div>
-			</article>
-
-			<article>
-				<h3>Mes compétences :</h3>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-badge"></div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4 class="timeline-title">1ère année de cycle préparatoire a la formation d’ingénieur</h4>
+								<h4><i class="far fa-clock" style="font-size: 20px; color: #B4D587;"></i>2018-2019</h4>
+								<h5><i class="fas fa-map-marked-alt" style="font-size: 20px; color: #B4D587;"></i>Université de Technologie de Troyes (UTT)</h5>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="timeline-badge"></div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4 class="timeline-title">Lycée, filière scientifique SSI</h4>
+								<h4><i class="far fa-clock" style="font-size: 20px; color: #B4D587;"></i>2015-2015</h4>
+								<h5><i class="fas fa-map-marked-alt" style="font-size: 20px; color: #B4D587;"></i>Prytanée National Militaire (la Flèche, Sarthe)</h5>
+							</div>
+						</div>
+					</li>
+				</ul>
 			</article>
 
 			<article class="couleur">
-				<h6>HTML5 CSS3</h6>
-				<div class="progress">
-	  				<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-				</div>
-				<h6>C/C++</h6>
-				<div class="progress">
-					 <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-				</div>
-				<h6>Javascript</h6>
-				<div class="progress">
-					 <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+				<a href="page/competences.html">
+					<h3>Mes Compétences</h3>
+				</a>
+				<div class="content">
+					<h6>HTML5 CSS3</h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped" role="progressbar"  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+							Très bon Niveau
+						</div>
+					</div>
+					<h6>Java (orienté objet)</h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:65%">
+							Bon Niveau, en cours d'apprentissage
+						</div>
+					</div>
+					<h6>PL / SQL</h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+							Bon niveau en SQL, début d'apprentissage du PL /SQL
+						</div>
+					</div>
+					<h6>C</h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped bg-success" role="progressbar"  aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+							Niveau Intermédiaire
+						</div>
+					</div>
+					<h6>VB .NET</h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped bg-dark" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%">
+							En cours d'apprentissage
+						</div>
+					</div>
+					<h6>Javascript</h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+							Notions
+						</div>
+					</div>
+
 				</div>
 			</article>
 		</div>
@@ -227,7 +276,7 @@
 					<a href="index.html">Accueil</a>			
 					<a href="page/contact.html">Contact</a>
 				</p>
-				<address><!-- balise pour indiquer le prproétaire du site -->
+				<address><!-- balise pour indiquer le propriétaire du site -->
 					<p class="footer-copyright">&copy; Tanguy Vidal - 2019</p>
 				</address>
 				<img src="image/html5.png" alt="w3cvalidator">
