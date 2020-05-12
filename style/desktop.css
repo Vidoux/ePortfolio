@@ -930,3 +930,31 @@ footer .footer-icons .linkedin:hover {
     background: #007bb5;
     transition: 0.5s;
 }
+
+
+#work_in_progress{
+    z-index: 1000;
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#work_in_progress img{
+    max-height: 200px;
+    height: 30%;
+}
+
+.popup_block{
+    background: #fff;
+    padding: 70px;
+    border: 20px solid #ddd;
+    position: relative;
+    margin: 10% auto;
+    width: 70%;
+    box-shadow: 0px 0px 20px #000;
+    border-radius: 10px;
+}

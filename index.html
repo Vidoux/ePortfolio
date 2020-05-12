@@ -37,6 +37,36 @@
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<script>
+			function masquer_div(id)
+			{
+				if (document.getElementById(id).style.display == 'none')
+				{
+					document.getElementById(id).style.display = 'block';
+				}
+				else
+				{
+					document.getElementById(id).style.display = 'none';
+				}
+			}
+		</script>
+
+			<div id="work_in_progress">
+				<div class="popup_block">
+					<div class="boite2">
+						<img  alt="travaux en cours" src="./image/travaux.png" />
+
+					</div>
+					<div class="boite2">
+						<h4>Ce site est en cours de construction, certaines pages pourraient présenter des bug ou ne pas être complètes</h4>
+						<input type="button" value="Continuer" onclick="masquer_div('work_in_progress');" style="width: 40%; margin-left: 30%; margin-right: 30%"/>
+					</div>
+
+				</div>
+
+
+			</div>
+
 
 		<!-- Bannière avec l'image en haut de la page -->
 		<div class="bloc_haut paralax" >
@@ -160,7 +190,7 @@
 					<p>Programmation du jeu The Tiler Team en <b>Java</b> orienté objet</p>
 				</div>
 				<div class="boite">
-					<a href="page/projets/mm01.html">
+					<a href="http://mm01.thorelnicolas.fr/p19/vidaltan/projet/">
 						<div class="filtre" id="f1">
 							<div class="texte">réalisation d'un<br />site vitrine</div>
 						</div>
@@ -308,7 +338,7 @@
 				
 				<p class="footer-about">
 					<span>A propos</span>
-					Ce site a été réalisé dans le cadre de l'UE CDIN dans le but de créer un outil utile dans le monde professionnel(<a href="https://www.iut.parisdescartes.fr/" style="text-decoration:none;color:gold;" target="_blank">IUT Paris Descartes</a>)
+					Ce site a été réalisé dans le but de créer un outil utile dans le monde professionnel(<a href="https://www.iut.parisdescartes.fr/" style="text-decoration:none;color:gold;" target="_blank">IUT Paris Descartes</a>)
 				</p>
 
 				<div class="footer-icons">
